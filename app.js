@@ -42,6 +42,10 @@ function onReady() {
       title.textContent = toDo.title;
     });
 
+    deleteButton.addEventListener(click => {
+      deleteToDo();
+    });
+}
     function deleteToDo(id) {
       toDos = toDos.filter(item => item.id !== id);
     }
@@ -51,11 +55,8 @@ function onReady() {
     createNewToDo();
     newToDoText.value = '';
   });
-
-  deleteButton.addEventListener(click => {
-    deleteToDo();
-  });
     renderTheUI();
+}
 
 window.onload = function() {
     onReady();
