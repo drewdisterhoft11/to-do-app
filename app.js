@@ -38,12 +38,12 @@ function onReady() {
       newLi.appendChild(checkbox);
       newLi.appendChild(deleteButton);
 
+      deleteButton.addEventListener('click', event => {
+        deleteToDo();
+      });
+
       const title = document.createElement('span');
       title.textContent = toDo.title;
-    });
-
-    deleteButton.addEventListener(click => {
-      deleteToDo();
     });
 }
     function deleteToDo(id) {
