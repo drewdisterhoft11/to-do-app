@@ -56,7 +56,7 @@ function onReady() {
 
   deleteButton.addEventListener(click => {
     deleteToDo();
-  }
+  });
     renderTheUI();
 }
 //
