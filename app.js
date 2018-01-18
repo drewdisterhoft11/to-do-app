@@ -54,12 +54,9 @@ function onReady() {
     newToDoText.value = '';
   });
 
-  deleteToDoForm.addEventListener('submit', event  => {
-    event.preventDefault();
+  deleteButton.addEventListener('click') => {
     deleteToDo();
-
-    renderTheUI();
-  });
+  }
     renderTheUI();
 }
 //
