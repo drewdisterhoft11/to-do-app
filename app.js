@@ -56,7 +56,6 @@ function onReady() {
     deleteToDo();
   });
     renderTheUI();
-}
 
 window.onload = function() {
     onReady();
