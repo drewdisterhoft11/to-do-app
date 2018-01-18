@@ -39,7 +39,7 @@ function onReady() {
       newLi.appendChild(deleteButton);
 
       deleteButton.addEventListener('click', event => {
-        deleteToDo();
+        deleteToDo(toDo.id);
       });
 
       const title = document.createElement('span');
