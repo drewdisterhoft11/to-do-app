@@ -20,10 +20,9 @@ function onReady() {
 
     renderTheUI();
   }
-//
+
   function renderTheUI() {
     const toDoList = document.getElementById('toDoList');
-    const deleteToDoForm = document.getElementById('deleteToDoForm');
 
     toDoList.textContent = '';
 
@@ -59,7 +58,7 @@ function onReady() {
   });
     renderTheUI();
 }
-//
+
 window.onload = function() {
     onReady();
 };
