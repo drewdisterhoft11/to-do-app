@@ -40,6 +40,7 @@ function onReady() {
 
       deleteButton.addEventListener('click', event => {
         deleteToDo(toDo.id);
+        renderTheUI();
       });
 
       const title = document.createElement('span');
