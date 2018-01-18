@@ -30,13 +30,14 @@ function onReady() {
     toDos.forEach(function(toDo){
       const newLi = document.createElement('li');
       const checkbox = document.createElement('input');
+      const deleteButton = document.createElement('button');
       checkbox.type = 'checkbox';
 
       newLi.textContent = toDo.title;
 
       toDoList.appendChild(newLi);
       newLi.appendChild(checkbox);
-    
+      newLi.appendChild(deleteButton);
 
       const title = document.createElement('span');
       title.textContent = toDo.title;
