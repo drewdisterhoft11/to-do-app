@@ -32,14 +32,14 @@ function onReady() {
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
 
-      newLi.textContent = toDo.title;
+      newLi.textContent = toDos.title;
 
       toDoList.appendChild(newLi);
       newLi.appendChild(checkbox);
       deleteToDoForm.appendChild(newLi);
 
       const title = document.createElement('span');
-      title.textContent = toDo.title;
+      title.textContent = toDos.title;
     });
 
     function deleteToDo(id) {
