@@ -12,15 +12,15 @@ function onReady() {
     toDos.push({
       title: newToDoText.value,
       complete: false,
-      id: newId.value;
+      id: id
     });
 
     newToDoText.value = '';
-    newId.value ++;
+    id++;
 
     renderTheUI();
   }
-
+//
   function renderTheUI() {
     const toDoList = document.getElementById('toDoList');
     const deleteToDoForm = document.getElementById('deleteToDoForm');
@@ -55,14 +55,13 @@ function onReady() {
 
   deleteToDoForm.addEventListener('submit', event  => {
     event.preventDefault();
-    deleteToDo(){
-      toDo.id;
-    }
+    deleteToDo();
+
     renderTheUI();
   });
     renderTheUI();
 }
-
+//
 window.onload = function() {
     onReady();
 };
