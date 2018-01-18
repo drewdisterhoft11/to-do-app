@@ -27,19 +27,19 @@ function onReady() {
 
     toDoList.textContent = '';
 
-    toDos.forEach(function(toDos){
+    toDos.forEach(function(toDo){
       const newLi = document.createElement('li');
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
 
-      newLi.textContent = toDos.title;
+      newLi.textContent = toDo.title;
 
       toDoList.appendChild(newLi);
       newLi.appendChild(checkbox);
-      deleteToDoForm.appendChild(newLi);
+    
 
       const title = document.createElement('span');
-      title.textContent = toDos.title;
+      title.textContent = toDo.title;
     });
 
     function deleteToDo(id) {
