@@ -54,7 +54,7 @@ function onReady() {
     newToDoText.value = '';
   });
 
-  deleteButton.addEventListener('click' => {
+  deleteButton.addEventListener(click => {
     deleteToDo();
   }
     renderTheUI();
